@@ -28,16 +28,3 @@ if(searchBlock){
     })
 }
 
-/*-------------------------Local Storage------------------------*/
-const value = document.querySelector('.block__value').textContent;
-localStorage.setItem('value', value);
-
-const obj = {
-  name: "Ali",
-  age:"19"
-}
-localStorage.setItem('info', JSON.stringify(obj));
-const  raw = localStorage.getItem('info');
-const person = JSON.parse(raw);
-person.name = "Mukhamedali";
-console.log(person);
